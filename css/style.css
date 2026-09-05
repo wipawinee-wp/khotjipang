@@ -21,21 +21,21 @@
 ========================================================= */
 
 body {
-
     font-family: 'Kanit', sans-serif;
-
     min-height: 100vh;
-
-    background-image:
-        url("../images/bg.jpg");
-
+    background-image: url("../images/bg.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-
     position: relative;
+}
 
+/* แก้ไขสำหรับมือถือ */
+@media (max-width: 768px) {
+    body {
+        background-attachment: scroll;
+    }
 }
 
 
