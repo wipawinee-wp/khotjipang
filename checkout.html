@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ยืนยันออเดอร์ | KHOTJIPANG & RAMYEON</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Checkout CSS -->
+    <link rel="stylesheet" href="css/checkout.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+     CHECKOUT PAGE
+========================================= -->
+
+    <main class="checkout-page">
+
+
+        <!-- =====================================
+         HEADER
+    ====================================== -->
+
+        <header class="checkout-header">
+
+            <div class="checkout-header-inner">
+
+                <!-- <button type="button" class="back-button" onclick="backToCart()" aria-label="กลับไปตะกร้า">
+
+                    <span>‹</span>
+
+                </button> -->
+                <button onclick="backToMenu()" class="back-button">
+
+                    <span>‹</span>
+
+                </button>
+
+
+                <div class="header-text">
+
+                    <h1>
+                        ยืนยันออเดอร์
+                    </h1>
+
+                    <p>
+                        ตรวจสอบข้อมูลก่อนสั่งซื้อ
+                    </p>
+
+                </div>
+
+
+                <div class="header-spacer"></div>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =====================================
+         CONTENT
+        ====================================== -->
+
+        <div class="checkout-container">
+
+
+            <!-- =================================
+            1. วิธีรับสินค้า
+            ================================== -->
+
+            <section class="checkout-card">
+
+                <div class="section-heading">
+
+                    <div class="section-icon">
+                        📦
+                    </div>
+
+                    <div>
+                        <h2>วิธีรับสินค้า</h2>
+
+                        <p>
+                            เลือกวิธีรับออเดอร์ของคุณ
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- RECEIVE OPTIONS -->
+
+                <div class="receive-options">
+
+                    <!-- PICKUP -->
+
+                    <button type="button" class="receive-option active" id="pickupOption"
+                        onclick="selectReceiveMethod('pickup')">
+
+                        <div class="option-icon">
+                            🏠
+                        </div>
+
+                        <div class="option-content">
+
+                            <strong>
+                                รับเอง
+                            </strong>
+
+                            <small>
+                                มารับที่ร้าน
+                            </small>
+
+                        </div>
+
+                        <div class="option-check">
+                            ✓
+                        </div>
+
+                    </button>
+
+
+                    <!-- DELIVERY -->
+
+                    <button type="button" class="receive-option" id="deliveryOption"
+                        onclick="selectReceiveMethod('delivery')">
+
+                        <div class="option-icon">
+                            🛵
+                        </div>
+
+                        <div class="option-content">
+
+                            <strong>
+                                จัดส่ง
+                            </strong>
+
+                            <small>
+                                ให้ร้านจัดส่งให้
+                            </small>
+
+                        </div>
+
+                        <div class="option-check">
+                            ✓
+                        </div>
+
+                    </button>
+
+                </div>
+
+
+                <!-- CUSTOMER INFORMATION -->
+
+                <div class="form-area">
+
+                    <!-- NAME -->
+
+                    <div class="form-group">
+
+                        <label class="form-label" for="customerName">
+
+                            ชื่อผู้สั่ง
+                            <span class="required">*</span>
+
+                        </label>
+
+                        <input type="text" class="form-input" id="customerName" placeholder="กรอกชื่อของคุณ"
+                            autocomplete="name" readonly>
+
+                    </div>
+
+
+                    <!-- PHONE -->
+
+                    <div class="form-group">
+
+                        <label class="form-label" for="customerPhone">
+
+                            เบอร์โทรศัพท์
+                            <span class="required">*</span>
+
+                        </label>
+
+                        <input type="tel" class="form-input" id="customerPhone" placeholder="เช่น 0812345678"
+                            maxlength="10" inputmode="numeric" autocomplete="tel" readonly>
+
+                    </div>
+
+
+                    <!-- DELIVERY ADDRESS -->
+
+                    <div class="form-group delivery-address-group" id="deliveryAddressGroup">
+
+                        <label class="form-label" for="deliveryAddress">
+
+                            ที่อยู่จัดส่ง
+                            <span class="required">*</span>
+
+                        </label>
+
+                        <textarea class="form-textarea" id="deliveryAddress" rows="6"
+                            placeholder="บ้านเลขที่ หมู่บ้าน ซอย ถนน แขวง/ตำบล เขต/อำเภอ จังหวัด และรายละเอียดเพิ่มเติม"></textarea>
+
+                    </div>
+
+
+                    <!-- DELIVERY NOTICE -->
+
+                    <div class="delivery-notice" id="deliveryNotice">
+
+                        <div class="delivery-notice-icon">
+                            🛵
+                        </div>
+
+                        <div class="delivery-notice-content">
+
+                            <strong>
+                                หมายเหตุการจัดส่ง
+                            </strong>
+
+                            <p>
+                                สั่งอาหารครบ <b>50 บาทขึ้นไป</b>
+                                จัดส่งฟรี
+                            </p>
+
+                            <p>
+                                หากยอดอาหาร <b>ไม่ถึง 50 บาท</b>
+                                คิดค่าจัดส่ง <b>10 บาท</b>
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================
+             2. วิธีชำระเงิน
+        ================================== -->
+
+            <section class="checkout-card">
+
+
+                <div class="section-heading">
+
+                    <div class="section-icon">
+                        💳
+                    </div>
+
+                    <div>
+
+                        <h2>
+                            ช่องทางการชำระเงิน
+                        </h2>
+
+                        <p>
+                            เลือกวิธีชำระเงินของคุณ
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PAYMENT OPTIONS -->
+
+                <div class="payment-options">
+
+
+                    <!-- CASH -->
+
+                    <button type="button" class="payment-option active" id="cashPayment"
+                        onclick="selectPaymentMethod('cash')">
+
+                        <div class="option-icon">
+                            💵
+                        </div>
+
+                        <div class="option-content">
+
+                            <strong>
+                                เงินสด
+                            </strong>
+
+                            <small>
+                                ชำระเงินที่ร้าน
+                            </small>
+
+                        </div>
+
+                        <div class="option-check">
+                            ✓
+                        </div>
+
+                    </button>
+
+
+
+                    <!-- TRANSFER -->
+
+                    <button type="button" class="payment-option" id="transferPayment"
+                        onclick="selectPaymentMethod('transfer')">
+
+                        <div class="option-icon">
+                            🏦
+                        </div>
+
+                        <div class="option-content">
+
+                            <strong>
+                                โอนเงิน
+                            </strong>
+
+                            <small>
+                                ธนาคาร / พร้อมเพย์
+                            </small>
+
+                        </div>
+
+                        <div class="option-check">
+                            ✓
+                        </div>
+
+                    </button>
+
+
+                </div>
+
+
+
+                <!-- TRANSFER BOX -->
+
+                <div class="transfer-box" id="transferBox">
+
+
+                    <div class="transfer-title">
+
+                        <div class="transfer-icon">
+                            📱
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                ชำระเงินด้วย QR Code
+                            </strong>
+
+                            <p>
+                                สแกน QR เพื่อชำระเงิน
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- QR -->
+
+                    <div class="qr-container">
+
+                        <img src="images/payment-qr.png" id="paymentQR" class="qr-image" alt="QR สำหรับชำระเงิน">
+
+                    </div>
+
+
+
+                    <!-- BANK INFORMATION -->
+
+                    <div class="bank-information">
+
+                        <div class="bank-row">
+
+                            <span>
+                                ธนาคาร
+                            </span>
+
+                            <strong>
+                                ธนาคารของร้าน
+                            </strong>
+
+                        </div>
+
+
+                        <div class="bank-row">
+
+                            <span>
+                                ชื่อบัญชี
+                            </span>
+
+                            <strong>
+                                ชื่อเจ้าของร้าน
+                            </strong>
+
+                        </div>
+
+
+                        <div class="bank-row">
+
+                            <span>
+                                เลขบัญชี
+                            </span>
+
+                            <strong>
+                                XXX-X-XXXXX-X
+                            </strong>
+
+                        </div>
+
+
+                        <div class="bank-row">
+
+                            <span>
+                                พร้อมเพย์
+                            </span>
+
+                            <strong>
+                                XXX-XXX-XXXX
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- DOWNLOAD QR -->
+
+                    <a href="images/payment-qr.png" download="payment-qr.png" class="download-qr">
+
+                        <span>
+                            ↓
+                        </span>
+
+                        บันทึกรูป QR Code
+
+                    </a>
+
+
+
+                    <!-- SLIP -->
+
+                    <div class="slip-section">
+
+                        <div class="slip-label-text">
+
+                            📎 อัปโหลดสลิปการโอนเงิน
+                            <span class="required">*</span>
+
+                        </div>
+
+
+                        <label for="slipImage" class="upload-box" id="uploadBox">
+
+
+                            <div class="upload-placeholder" id="uploadPlaceholder">
+
+                                <div class="upload-camera">
+                                    📷
+                                </div>
+
+                                <strong>
+                                    แตะเพื่ออัปโหลดสลิป
+                                </strong>
+
+                                <small>
+                                    JPG หรือ PNG • ไม่เกิน 5 MB
+                                </small>
+
+                            </div>
+
+
+                            <img src="" id="slipPreview" class="slip-preview" alt="ตัวอย่างสลิป">
+
+                        </label>
+
+
+                        <input type="file" id="slipImage" accept="image/jpeg,image/png" hidden>
+
+                    </div>
+
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =================================
+             3. สรุปออเดอร์
+        ================================== -->
+
+            <section class="checkout-card">
+
+
+                <div class="section-heading">
+
+                    <div class="section-icon">
+                        🧾
+                    </div>
+
+                    <div>
+
+                        <h2>
+                            สรุปออเดอร์
+                        </h2>
+
+                        <p>
+                            รายการอาหารที่คุณสั่ง
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- CART ITEMS -->
+
+                <div id="checkoutItems" class="order-items">
+
+                </div>
+
+
+
+                <!-- DIVIDER -->
+
+                <div class="summary-divider"></div>
+
+
+
+                <!-- FOOD TOTAL -->
+
+                <div class="summary-row">
+
+                    <span>
+                        ค่าอาหาร
+                    </span>
+
+                    <strong id="foodTotal">
+                        ฿0
+                    </strong>
+
+                </div>
+
+
+
+                <!-- DELIVERY -->
+
+                <div class="summary-row" id="deliveryFeeRow">
+
+                    <span>
+                        ค่าจัดส่ง
+                    </span>
+
+                    <strong id="deliveryFee">
+                        ฿0
+                    </strong>
+
+                </div>
+
+
+
+                <!-- TOTAL -->
+
+                <div class="summary-total">
+
+                    <span>
+                        ยอดรวมทั้งหมด
+                    </span>
+
+                    <strong id="checkoutTotal">
+                        ฿0
+                    </strong>
+
+                </div>
+
+
+            </section>
+
+
+        </div>
+
+
+    </main>
+
+
+
+    <!-- =========================================
+     FIXED BOTTOM
+========================================= -->
+
+    <div class="checkout-footer">
+
+
+        <div class="footer-inner">
+
+
+            <div class="footer-total">
+
+                <span>
+                    ยอดรวม
+                </span>
+
+                <strong id="confirmTotal">
+                    ฿0
+                </strong>
+
+            </div>
+
+
+
+            <button type="button" class="confirm-order-button" id="confirmOrderButton" onclick="confirmOrder()">
+
+                <span>
+                    ยืนยันการสั่งซื้อ
+                </span>
+
+                <span class="confirm-arrow">
+                    →
+                </span>
+
+            </button>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- Checkout JS -->
+
+    <script src="js/checkout.js"></script>
+
+
+</body>
+
+</html>

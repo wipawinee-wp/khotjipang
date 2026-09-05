@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>สั่งซื้อสำเร็จ | KHOTJIPANG & RAMYEON</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/order-success.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         HEADER
+    ========================================== -->
+
+    <header class="success-header">
+
+        <div class="logo">
+            KHOTJIPANG
+            <span>& RAMYEON</span>
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================================
+         MAIN
+    ========================================== -->
+
+    <main class="success-container">
+
+
+        <!-- =====================================
+             SUCCESS ICON
+        ====================================== -->
+
+        <section class="success-top">
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+            <h1>
+                สั่งซื้อสำเร็จ!
+            </h1>
+
+            <p>
+                ขอบคุณสำหรับการสั่งซื้อ ❤️
+            </p>
+
+        </section>
+
+
+
+        <!-- =====================================
+             ORDER NUMBER
+        ====================================== -->
+
+        <section class="order-number-card">
+
+            <span>
+                เลขออเดอร์
+            </span>
+
+            <strong id="orderId">
+                KJP#001
+            </strong>
+
+        </section>
+
+
+
+        <!-- =====================================
+             ORDER STATUS
+        ====================================== -->
+
+        <section class="card">
+
+            <div class="section-title">
+
+                <h2>
+                    สถานะออเดอร์
+                </h2>
+
+                <span id="statusText" class="status-text">
+                    รับออเดอร์แล้ว
+                </span>
+
+            </div>
+
+
+            <div class="status-timeline">
+
+
+                <!-- STEP 1 -->
+
+                <div class="status-step active" id="statusReceived">
+
+                    <div class="status-circle">
+                        ✓
+                    </div>
+
+                    <div class="status-content">
+
+                        <strong>
+                            รับออเดอร์แล้ว
+                        </strong>
+
+                        <small>
+                            ร้านได้รับออเดอร์ของคุณแล้ว
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- LINE -->
+
+                <div class="status-line"></div>
+
+
+
+                <!-- STEP 2 -->
+
+                <div class="status-step" id="statusPreparing">
+
+                    <div class="status-circle">
+                        2
+                    </div>
+
+                    <div class="status-content">
+
+                        <strong>
+                            กำลังเตรียมอาหาร
+                        </strong>
+
+                        <small>
+                            ร้านกำลังเตรียมออเดอร์
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="status-line"></div>
+
+
+
+                <!-- STEP 3 -->
+
+                <div class="status-step" id="statusShipping">
+
+                    <div class="status-circle">
+                        3
+                    </div>
+
+                    <div class="status-content">
+
+                        <strong id="shippingTitle">
+                            กำลังจัดส่ง
+                        </strong>
+
+                        <small id="shippingDescription">
+                            ไรเดอร์กำลังนำอาหารไปส่ง
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="status-line"></div>
+
+
+
+                <!-- STEP 4 -->
+
+                <div class="status-step" id="statusCompleted">
+
+                    <div class="status-circle">
+                        4
+                    </div>
+
+                    <div class="status-content">
+
+                        <strong>
+                            สำเร็จ
+                        </strong>
+
+                        <small>
+                            ขอบคุณที่ใช้บริการ
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             CUSTOMER INFORMATION
+        ====================================== -->
+
+        <section class="card">
+
+            <h2>
+                ข้อมูลออเดอร์
+            </h2>
+
+            <div class="info-row">
+
+                <span>
+                    วันที่สั่งซื้อ
+                </span>
+
+                <strong id="orderDate">
+                    -
+                </strong>
+
+            </div>
+
+
+            <div class="info-row">
+
+                <span>
+                    เวลาสั่งซื้อ
+                </span>
+
+                <strong id="orderTime">
+                    -
+                </strong>
+
+            </div>
+
+
+            <div class="info-row">
+
+                <span>
+                    ชื่อผู้รับ
+                </span>
+
+                <strong id="customerName">
+                    -
+                </strong>
+
+            </div>
+
+
+            <div class="info-row">
+
+                <span>
+                    เบอร์โทร
+                </span>
+
+                <strong id="customerPhone">
+                    -
+                </strong>
+
+            </div>
+
+
+            <div class="info-row" id="addressRow">
+
+                <span>
+                    ที่อยู่จัดส่ง
+                </span>
+
+                <strong id="customerAddress">
+                    -
+                </strong>
+
+            </div>
+
+
+            <div class="info-row">
+
+                <span>
+                    วิธีรับสินค้า
+                </span>
+
+                <strong id="receiveMethod">
+                    -
+                </strong>
+
+            </div>
+
+            <!-- =====================================
+            PAYMENT INFORMATION
+            ====================================== -->
+
+            <div class="info-row">
+
+                <span>
+                    วิธีชำระเงิน
+                </span>
+
+                <strong id="paymentMethod">
+                    -
+                </strong>
+
+            </div>
+
+
+            <!-- =====================================
+                PAYMENT SLIP
+            ====================================== -->
+
+            <div class="payment-slip-row" id="paymentSlipRow" style="display: none;">
+
+                <div class="payment-slip-title">
+
+                    <span>
+                        หลักฐานการชำระเงิน
+                    </span>
+
+                    <span id="paymentStatus" class="payment-status">
+                        ✓ ส่งหลักฐานแล้ว
+                    </span>
+
+                </div>
+
+
+                <div class="payment-slip-wrapper">
+
+                    <img id="paymentSlip" src="" alt="หลักฐานการชำระเงิน" class="payment-slip-image">
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             ORDER ITEMS
+        ====================================== -->
+
+        <section class="card">
+
+            <h2>
+                รายการอาหาร
+            </h2>
+
+            <div id="orderItems">
+
+                <!-- JS -->
+
+            </div>
+
+
+            <div class="summary">
+
+                <div class="summary-row">
+
+                    <span>
+                        ค่าอาหาร
+                    </span>
+
+                    <strong id="foodTotal">
+                        0 ฿
+                    </strong>
+
+                </div>
+
+
+                <div class="summary-row" id="deliveryFeeRow">
+
+                    <span>
+                        ค่าจัดส่ง
+                    </span>
+
+                    <strong id="deliveryFee">
+                        0 ฿
+                    </strong>
+
+                </div>
+
+
+                <div class="summary-total">
+
+                    <span>
+                        รวมทั้งหมด
+                    </span>
+
+                    <strong id="total">
+                        0 ฿
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             BUTTONS
+        ====================================== -->
+
+        <div class="action-buttons">
+
+            <button class="primary-button" onclick="goHome()">
+
+                กลับหน้าหลัก
+
+            </button>
+
+            <button class="secondary-button" onclick="refreshOrderStatus()">
+
+                ↻ อัปเดตสถานะ
+
+            </button>
+
+        </div>
+
+
+    </main>
+
+
+
+    <script src="js/order-success.js"></script>
+
+</body>
+
+</html>
