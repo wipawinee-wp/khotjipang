@@ -6,8 +6,12 @@
 // const SHOP_LAT = 13.8765; 
 // const SHOP_LNG = 100.4123;
 
-const SHOP_LAT = 13.8989879;
-const SHOP_LNG = 100.3652583;
+
+// const SHOP_LAT = 13.8989879;
+// const SHOP_LNG = 100.3652583;
+
+const SHOP_LAT = 13.914975117290831;
+const SHOP_LNG = 100.55193129564663;
 
 
 // ระยะสูงสุดที่ให้บริการ
