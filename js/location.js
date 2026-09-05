@@ -10,12 +10,17 @@
 // const SHOP_LAT = 13.8989879;
 // const SHOP_LNG = 100.3652583;
 
-const SHOP_LAT = 13.914975117290831;
-const SHOP_LNG = 100.55193129564663;
+// const SHOP_LAT = 13.914975117290831;
+// const SHOP_LNG = 100.55193129564663; มอศิลปากร เมืองทอง
+
+
+const SHOP_LAT = 13.901026593463579;
+const SHOP_LNG = 100.36511682395017;
+
 
 
 // ระยะสูงสุดที่ให้บริการ
-const MAX_DISTANCE = 100;
+const MAX_DISTANCE = 5000;
 
 
 // =====================================
