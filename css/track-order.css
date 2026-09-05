@@ -1,0 +1,1050 @@
+/* =========================================
+   GOOGLE FONT
+========================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap');
+
+
+
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+
+    font-family: 'Kanit', sans-serif;
+
+    background: #f7f7f7;
+
+    color: #333;
+
+    min-height: 100vh;
+
+}
+
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.header {
+
+    width: 100%;
+
+    height: 70px;
+
+    background: #00766a;
+
+    box-shadow:
+        0 3px 15px rgba(0, 0, 0, 0.08);
+
+}
+
+
+
+.header-inner {
+
+    width: 100%;
+
+    max-width: 600px;
+
+    height: 100%;
+
+    margin: auto;
+
+    padding: 0 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+
+
+.logo {
+
+    text-decoration: none;
+
+    color: white;
+
+    font-size: 19px;
+
+    font-weight: 700;
+
+    line-height: 1.1;
+
+}
+
+
+
+.logo span {
+
+    display: block;
+
+    font-size: 11px;
+
+    font-weight: 400;
+
+    letter-spacing: 1px;
+
+}
+
+
+
+.back-button {
+
+    text-decoration: none;
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: 400;
+
+    padding: 8px 12px;
+
+    border: 1px solid rgba(255,255,255,0.5);
+
+    border-radius: 20px;
+
+}
+
+
+
+/* =========================================
+   MAIN
+========================================= */
+
+.track-container {
+
+    width: 100%;
+
+    max-width: 520px;
+
+    margin: auto;
+
+    padding: 28px 16px 40px;
+
+}
+
+
+
+/* =========================================
+   PAGE TITLE
+========================================= */
+
+.page-title {
+
+    text-align: center;
+
+    margin-bottom: 22px;
+
+}
+
+
+
+.title-icon {
+
+    width: 60px;
+
+    height: 60px;
+
+    margin: 0 auto 10px;
+
+    background: #e8f7f4;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 28px;
+
+}
+
+
+
+.page-title h1 {
+
+    font-size: 25px;
+
+    font-weight: 600;
+
+    color: #00766a;
+
+}
+
+
+
+.page-title p {
+
+    margin-top: 3px;
+
+    font-size: 13px;
+
+    color: #999;
+
+}
+
+
+
+/* =========================================
+   ORDER NUMBER
+========================================= */
+
+.order-number-card {
+
+    background: #00766a;
+
+    color: white;
+
+    border-radius: 16px;
+
+    padding: 17px 20px;
+
+    margin-bottom: 14px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+
+
+.order-number-card span {
+
+    font-size: 13px;
+
+    opacity: 0.85;
+
+}
+
+
+
+.order-number-card strong {
+
+    font-size: 21px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.5px;
+
+}
+
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.card {
+
+    background: white;
+
+    border-radius: 17px;
+
+    padding: 20px;
+
+    margin-bottom: 14px;
+
+    box-shadow:
+        0 3px 15px rgba(0, 0, 0, 0.045);
+
+}
+
+
+
+/* =========================================
+   CARD TITLE
+========================================= */
+
+.card-title {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+.card-title h2 {
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+}
+
+
+
+.card-title p {
+
+    font-size: 12px;
+
+    color: #999;
+
+    margin-top: 2px;
+
+}
+
+
+
+.status-badge {
+
+    padding: 5px 10px;
+
+    border-radius: 20px;
+
+    background: #e8f7f4;
+
+    color: #00766a;
+
+    font-size: 11px;
+
+    white-space: nowrap;
+
+}
+
+
+
+/* =========================================
+   TIMELINE
+========================================= */
+
+.timeline {
+
+    position: relative;
+
+    padding-left: 4px;
+
+}
+
+
+
+.timeline-item {
+
+    position: relative;
+
+    display: flex;
+
+    gap: 15px;
+
+    min-height: 76px;
+
+    opacity: 0.38;
+
+}
+
+
+
+.timeline-item::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 15px;
+
+    top: 32px;
+
+    width: 2px;
+
+    height: 45px;
+
+    background: #ddd;
+
+}
+
+
+
+.timeline-item:last-child::before {
+
+    display: none;
+
+}
+
+
+
+.timeline-item.active {
+
+    opacity: 1;
+
+}
+
+
+
+.timeline-item.completed {
+
+    opacity: 1;
+
+}
+
+
+
+.timeline-dot {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 32px;
+
+    height: 32px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: #e8e8e8;
+
+    color: #999;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+}
+
+
+
+.timeline-item.active .timeline-dot,
+
+.timeline-item.completed .timeline-dot {
+
+    background: #00766a;
+
+    color: white;
+
+}
+
+
+
+.timeline-item.completed::before {
+
+    background: #00766a;
+
+}
+
+
+
+.timeline-content {
+
+    padding-top: 3px;
+
+}
+
+
+
+.timeline-content strong {
+
+    display: block;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+}
+
+
+
+.timeline-content span {
+
+    display: block;
+
+    margin-top: 2px;
+
+    font-size: 11px;
+
+    color: #999;
+
+}
+
+
+
+/* =========================================
+   SECTION HEADING
+========================================= */
+
+.section-heading {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    margin-bottom: 16px;
+
+}
+
+
+
+.section-icon {
+
+    width: 34px;
+
+    height: 34px;
+
+    border-radius: 10px;
+
+    background: #e8f7f4;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 16px;
+
+}
+
+
+
+.section-heading h2 {
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+}
+
+
+
+/* =========================================
+   INFO
+========================================= */
+
+.info-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+}
+
+
+
+.info-row {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    gap: 15px;
+
+    font-size: 13px;
+
+}
+
+
+
+.info-row span {
+
+    color: #999;
+
+    flex-shrink: 0;
+
+}
+
+
+
+.info-row strong {
+
+    font-weight: 400;
+
+    text-align: right;
+
+    color: #444;
+
+}
+
+
+
+#customerAddress {
+
+    max-width: 270px;
+
+}
+
+
+
+/* =========================================
+   ORDER ITEMS
+========================================= */
+
+.order-items {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 13px;
+
+}
+
+
+
+.order-item {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+}
+
+
+
+.order-item-left {
+
+    min-width: 0;
+
+}
+
+
+
+.order-item-name {
+
+    font-size: 13px;
+
+    font-weight: 500;
+
+}
+
+
+
+.order-item-quantity {
+
+    font-size: 11px;
+
+    color: #999;
+
+}
+
+
+
+.order-item-toppings {
+
+    margin-top: 3px;
+
+    font-size: 10px;
+
+    color: #999;
+
+}
+
+
+
+.order-item-price {
+
+    font-size: 13px;
+
+    font-weight: 500;
+
+    white-space: nowrap;
+
+}
+
+
+
+.total-box {
+
+    margin-top: 18px;
+
+    padding-top: 15px;
+
+    border-top: 1px solid #eee;
+
+}
+
+
+
+.total-row {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    font-size: 12px;
+
+    margin-bottom: 8px;
+
+}
+
+
+
+.total-row span {
+
+    color: #999;
+
+}
+
+
+
+.total-row strong {
+
+    font-weight: 500;
+
+}
+
+
+
+.total-divider {
+
+    height: 1px;
+
+    background: #eee;
+
+    margin: 10px 0;
+
+}
+
+
+
+.total-row.final {
+
+    margin-bottom: 0;
+
+}
+
+
+
+.total-row.final span {
+
+    color: #333;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+}
+
+
+
+.total-row.final strong {
+
+    color: #00766a;
+
+    font-size: 20px;
+
+    font-weight: 600;
+
+}
+
+
+
+/* =========================================
+   PAYMENT
+========================================= */
+
+.payment-info {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+}
+
+
+
+.payment-slip-section {
+
+    border-top: 1px solid #eee;
+
+    padding-top: 15px;
+
+}
+
+
+
+.payment-status {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 11px 12px;
+
+    background: #e8f7f4;
+
+    border-radius: 11px;
+
+}
+
+
+
+.payment-status > span {
+
+    width: 27px;
+
+    height: 27px;
+
+    border-radius: 50%;
+
+    background: #00766a;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 12px;
+
+}
+
+
+
+.payment-status strong {
+
+    display: block;
+
+    color: #00766a;
+
+    font-size: 12px;
+
+    font-weight: 500;
+
+}
+
+
+
+.payment-status small {
+
+    display: block;
+
+    color: #777;
+
+    font-size: 10px;
+
+    margin-top: 1px;
+
+}
+
+
+
+.slip-container {
+
+    margin-top: 12px;
+
+    padding: 8px;
+
+    background: #f7f7f7;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+}
+
+
+
+.slip-container img {
+
+    display: block;
+
+    width: 100%;
+
+    max-height: 420px;
+
+    object-fit: contain;
+
+    border-radius: 8px;
+
+}
+
+
+
+.slip-file-name {
+
+    margin-top: 6px;
+
+    font-size: 10px;
+
+    color: #aaa;
+
+    text-align: center;
+
+    word-break: break-all;
+
+}
+
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.action-section {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    margin-top: 5px;
+
+}
+
+
+
+.refresh-button,
+
+.home-button {
+
+    width: 100%;
+
+    height: 48px;
+
+    border-radius: 13px;
+
+    font-family: 'Kanit', sans-serif;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+}
+
+
+
+.refresh-button {
+
+    border: 1px solid #00766a;
+
+    background: white;
+
+    color: #00766a;
+
+}
+
+
+
+.refresh-button span {
+
+    font-size: 19px;
+
+    margin-right: 5px;
+
+}
+
+
+
+.home-button {
+
+    border: none;
+
+    background: #00766a;
+
+    color: white;
+
+}
+
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .header {
+
+        height: 64px;
+
+    }
+
+
+    .logo {
+
+        font-size: 17px;
+
+    }
+
+
+    .track-container {
+
+        padding:
+            22px
+            14px
+            35px;
+
+    }
+
+
+    .page-title h1 {
+
+        font-size: 23px;
+
+    }
+
+
+    .card {
+
+        padding: 17px;
+
+        border-radius: 15px;
+
+    }
+
+
+    .order-number-card {
+
+        padding: 15px 17px;
+
+    }
+
+
+    .order-number-card strong {
+
+        font-size: 19px;
+
+    }
+
+}

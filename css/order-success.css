@@ -1,0 +1,708 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+
+    font-family: "Kanit", sans-serif;
+
+    background: #f7f7f7;
+
+    color: #333;
+
+    min-height: 100vh;
+
+}
+
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.success-header {
+
+    height: 60px;
+
+    background: #00766a;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: white;
+
+}
+
+
+.logo {
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    letter-spacing: .5px;
+
+}
+
+
+.logo span {
+
+    font-weight: 400;
+
+    font-size: 14px;
+
+}
+
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.success-container {
+
+    width: 100%;
+
+    max-width: 520px;
+
+    margin: auto;
+
+    padding: 24px 16px 40px;
+
+}
+
+
+
+/* =========================================
+   SUCCESS TOP
+========================================= */
+
+.success-top {
+
+    text-align: center;
+
+    margin-bottom: 22px;
+
+}
+
+
+.success-icon {
+
+    width: 70px;
+
+    height: 70px;
+
+    margin: auto;
+
+    border-radius: 50%;
+
+    background: #00b277;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 38px;
+
+    font-weight: 600;
+
+    box-shadow:
+        0 8px 25px rgba(0, 178, 119, .2);
+
+}
+
+
+.success-top h1 {
+
+    margin-top: 14px;
+
+    font-size: 25px;
+
+}
+
+
+.success-top p {
+
+    margin-top: 3px;
+
+    color: #888;
+
+    font-size: 14px;
+
+}
+
+
+
+/* =========================================
+   ORDER NUMBER
+========================================= */
+
+.order-number-card {
+
+    background: white;
+
+    border-radius: 16px;
+
+    padding: 18px;
+
+    text-align: center;
+
+    margin-bottom: 14px;
+
+    box-shadow:
+        0 3px 15px rgba(0,0,0,.05);
+
+}
+
+
+.order-number-card span {
+
+    display: block;
+
+    font-size: 13px;
+
+    color: #888;
+
+}
+
+
+.order-number-card strong {
+
+    display: block;
+
+    margin-top: 3px;
+
+    color: #00766a;
+
+    font-size: 28px;
+
+    letter-spacing: 1px;
+
+}
+
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.card {
+
+    background: white;
+
+    border-radius: 16px;
+
+    padding: 18px;
+
+    margin-bottom: 14px;
+
+    box-shadow:
+        0 3px 15px rgba(0,0,0,.05);
+
+}
+
+
+.card h2 {
+
+    font-size: 17px;
+
+    margin-bottom: 16px;
+
+}
+
+
+
+/* =========================================
+   SECTION TITLE
+========================================= */
+
+.section-title {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 10px;
+
+}
+
+
+.section-title h2 {
+
+    margin: 0;
+
+}
+
+
+.status-text {
+
+    font-size: 12px;
+
+    color: #00766a;
+
+    background: #e8f7f4;
+
+    padding: 5px 9px;
+
+    border-radius: 20px;
+
+}
+
+
+
+/* =========================================
+   STATUS TIMELINE
+========================================= */
+
+.status-timeline {
+
+    margin-top: 20px;
+
+}
+
+
+.status-step {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 12px;
+
+    opacity: .45;
+
+}
+
+
+.status-step.active {
+
+    opacity: 1;
+
+}
+
+
+.status-circle {
+
+    width: 34px;
+
+    height: 34px;
+
+    min-width: 34px;
+
+    border-radius: 50%;
+
+    border: 2px solid #ddd;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 13px;
+
+    color: #999;
+
+}
+
+
+.status-step.active .status-circle {
+
+    background: #00766a;
+
+    border-color: #00766a;
+
+    color: white;
+
+}
+
+
+.status-content {
+
+    padding-top: 1px;
+
+}
+
+
+.status-content strong {
+
+    display: block;
+
+    font-size: 14px;
+
+}
+
+
+.status-content small {
+
+    display: block;
+
+    color: #999;
+
+    font-size: 11px;
+
+    margin-top: 2px;
+
+}
+
+
+.status-line {
+
+    height: 28px;
+
+    width: 2px;
+
+    background: #ddd;
+
+    margin-left: 16px;
+
+}
+
+
+
+/* =========================================
+   CUSTOMER INFO
+========================================= */
+
+.info-row {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 10px 0;
+
+    border-bottom: 1px solid #eee;
+
+    font-size: 13px;
+
+}
+
+
+.info-row:last-child {
+
+    border-bottom: none;
+
+}
+
+
+.info-row span {
+
+    color: #888;
+
+    flex-shrink: 0;
+
+}
+
+
+.info-row strong {
+
+    text-align: right;
+
+    max-width: 65%;
+
+    font-weight: 500;
+
+}
+
+
+
+/* =========================================
+   ORDER ITEMS
+========================================= */
+
+.order-item {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding: 10px 0;
+
+    border-bottom: 1px solid #eee;
+
+}
+
+
+.order-item:last-child {
+
+    border-bottom: none;
+
+}
+
+
+.order-item-name {
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+}
+
+
+.order-item-detail {
+
+    color: #888;
+
+    font-size: 11px;
+
+    margin-top: 2px;
+
+}
+
+
+.order-item-price {
+
+    font-size: 14px;
+
+    white-space: nowrap;
+
+}
+
+
+
+/* =========================================
+   SUMMARY
+========================================= */
+
+.summary {
+
+    margin-top: 12px;
+
+    padding-top: 10px;
+
+    border-top: 1px solid #eee;
+
+}
+
+
+.summary-row {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    font-size: 13px;
+
+    padding: 5px 0;
+
+    color: #777;
+
+}
+
+
+.summary-total {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-top: 8px;
+
+    padding-top: 10px;
+
+    border-top: 1px solid #ddd;
+
+    font-size: 17px;
+
+}
+
+
+.summary-total strong {
+
+    color: #00766a;
+
+}
+
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.action-buttons {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 8px;
+
+}
+
+
+.action-buttons button {
+
+    width: 100%;
+
+    min-height: 48px;
+
+    border-radius: 12px;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+}
+
+
+.primary-button {
+
+    background: #00766a;
+
+    color: white;
+
+    border: none;
+
+}
+
+
+.secondary-button {
+
+    background: white;
+
+    color: #00766a;
+
+    border: 1px solid #00766a;
+
+}
+
+
+/* =========================================
+   PAYMENT INFORMATION
+========================================= */
+
+.payment-slip-row {
+
+    margin-top: 10px;
+
+    padding-top: 14px;
+
+    border-top: 1px solid #eee;
+
+}
+
+
+/* =========================================
+   PAYMENT SLIP TITLE
+========================================= */
+
+.payment-slip-title {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 10px;
+
+    font-size: 13px;
+
+    color: #888;
+
+    margin-bottom: 10px;
+
+}
+
+
+/* =========================================
+   PAYMENT STATUS
+========================================= */
+
+.payment-status {
+
+    color: #00766a;
+
+    background: #e8f7f4;
+
+    padding: 5px 9px;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+
+    white-space: nowrap;
+
+}
+
+
+/* =========================================
+   PAYMENT SLIP IMAGE
+========================================= */
+
+.payment-slip-wrapper {
+
+    width: 100%;
+
+    background: #f7f7f7;
+
+    border-radius: 12px;
+
+    padding: 8px;
+
+    text-align: center;
+
+}
+
+
+.payment-slip-image {
+
+    display: block;
+
+    width: 100%;
+
+    max-height: 420px;
+
+    object-fit: contain;
+
+    border-radius: 8px;
+
+}
+
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+    .success-container {
+
+        padding-left: 12px;
+
+        padding-right: 12px;
+
+    }
+
+    .action-buttons {
+
+        flex-direction: column;
+
+    }
+
+}
+
