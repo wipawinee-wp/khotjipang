@@ -1,0 +1,1400 @@
+/* =========================================
+   GOOGLE FONT
+========================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap');
+
+
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Kanit', sans-serif;
+    background: #f7f7f7;
+    color: #333;
+    min-height: 100vh;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.header {
+    width: 100%;
+    height: 70px;
+    background: #274bb6;
+
+    box-shadow:
+        0 3px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+.header-inner {
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    margin: auto;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.logo {
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+
+.logo span {
+    display: block;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+
+.back-button {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 8px 12px;
+
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+}
+
+#angle-small-left{
+    position: relative;
+    top: 3px;
+    font-size: 14px;
+}
+
+
+/* =========================================
+   MAIN
+========================================= */
+
+.track-container {
+    width: 100%;
+    max-width: 520px;
+    margin: auto;
+    padding: 28px 16px 40px;
+}
+
+
+/* =========================================
+   PAGE TITLE
+========================================= */
+
+.page-title {
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+
+.title-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 10px;
+
+    background: #e8eefc;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 28px;
+    color: #274bb6;
+    padding-top: 4px;
+}
+
+
+.page-title h1 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #274bb6;
+}
+
+
+.page-title p {
+    margin-top: 3px;
+    font-size: 13px;
+    color: #999;
+}
+
+
+/* =========================================
+   ORDER NUMBER
+========================================= */
+
+.order-number-card {
+    background: #274bb6;
+    color: white;
+
+    border-radius: 16px;
+    padding: 17px 20px;
+    margin-bottom: 14px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.order-number-card span {
+    font-size: 13px;
+    opacity: 0.85;
+}
+
+
+.order-number-card strong {
+    font-size: 21px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.card {
+    background: white;
+    border-radius: 17px;
+    padding: 20px;
+    margin-bottom: 14px;
+
+    box-shadow:
+        0 3px 15px rgba(0, 0, 0, 0.045);
+}
+
+
+/* =========================================
+   CARD TITLE
+========================================= */
+
+.card-title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+
+.card-title h2 {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+
+.card-title p {
+    font-size: 12px;
+    color: #999;
+    margin-top: 2px;
+}
+
+
+.status-badge {
+    padding: 5px 10px;
+    border-radius: 20px;
+
+    background: #e8eefc;
+    color: #274bb6;
+
+    font-size: 11px;
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   TIMELINE
+========================================= */
+
+.timeline {
+    position: relative;
+    padding-left: 4px;
+}
+
+
+.timeline-item {
+    position: relative;
+
+    display: flex;
+    gap: 15px;
+
+    min-height: 76px;
+    opacity: 0.38;
+}
+
+
+.timeline-item::before {
+    content: "";
+
+    position: absolute;
+    left: 15px;
+    top: 32px;
+
+    width: 2px;
+    height: 45px;
+
+    background: #ddd;
+}
+
+
+.timeline-item:last-child::before {
+    display: none;
+}
+
+
+.timeline-item.active {
+    opacity: 1;
+}
+
+
+.timeline-item.completed {
+    opacity: 1;
+}
+
+
+.timeline-dot {
+    position: relative;
+    z-index: 2;
+
+    width: 32px;
+    height: 32px;
+
+    flex-shrink: 0;
+    border-radius: 50%;
+
+    background: #e8e8e8;
+    color: #999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 12px;
+    font-weight: 600;
+    padding-top: 3px;
+}
+
+
+.timeline-item.active .timeline-dot,
+.timeline-item.completed .timeline-dot {
+    /* background: #274bb6; */
+    background: #00b277;
+    color: white;
+}
+
+
+.timeline-item.completed::before {
+    background: #274bb6;
+}
+
+
+.timeline-content {
+    padding-top: 3px;
+}
+
+
+.timeline-content strong {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+.timeline-content span {
+    display: block;
+    margin-top: 2px;
+
+    font-size: 11px;
+    color: #999;
+}
+
+
+/* =========================================
+   SECTION HEADING
+========================================= */
+
+.section-heading {
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+    margin-bottom: 16px;
+}
+
+
+.section-icon {
+    width: 34px;
+    height: 34px;
+
+    border-radius: 10px;
+    background: #e8eefc;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 16px;
+    color: #274bb6;
+    padding-top: 2px;
+}
+
+
+.section-heading h2 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   INFO
+========================================= */
+
+.info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 15px;
+    font-size: 13px;
+}
+
+
+.info-row span {
+    color: #999;
+    flex-shrink: 0;
+}
+
+
+.info-row strong {
+    font-weight: 400;
+    text-align: right;
+    color: #444;
+}
+
+
+#customerAddress {
+    max-width: 270px;
+}
+
+
+/* =========================================
+   ORDER ITEMS
+========================================= */
+
+.order-items {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+
+.order-item {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 10px;
+    padding: 10px 0;
+
+    border-bottom: 1px solid #eee;
+}
+
+
+.order-item:last-child {
+    border-bottom: none;
+}
+
+
+/* =========================================
+   รูปเมนู
+========================================= */
+
+.order-item-image {
+    width: 68px;
+    height: 68px;
+
+    object-fit: cover;
+    border-radius: 10px;
+
+    flex-shrink: 0;
+    background: #f3f3f3;
+}
+
+
+/* =========================================
+   ข้อมูลสินค้า
+========================================= */
+
+.order-item-info {
+    flex: 1;
+    min-width: 0;
+}
+
+
+.order-item-name {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+
+.order-item-quantity {
+    color: #777;
+    font-weight: 400;
+}
+
+
+/* =========================================
+   TOPPING
+========================================= */
+
+.order-item-detail {
+    display: block;
+    width: fit-content;
+
+    margin-top: 6px;
+    padding: 5px 9px;
+
+    background: #edf2ff;
+    border-radius: 8px;
+
+    font-size: 12px;
+    line-height: 1.5;
+
+    max-width: 100%;
+}
+
+
+.topping-label {
+    color: #274bb6;
+    font-weight: 500;
+}
+
+
+.topping-text {
+    color: #777;
+    margin-left: 3px;
+    word-break: break-word;
+}
+
+
+.topping-item {
+    color: #777;
+}
+
+
+.topping-price {
+    margin-left: 8px;
+    color: #777;
+}
+
+
+/* =========================================
+   หมายเหตุ
+========================================= */
+
+.order-item-note {
+    display: inline-block;
+
+    margin-top: 6px;
+    padding: 5px 9px;
+
+    background: #fff7e8;
+    border-radius: 8px;
+
+    font-size: 12px;
+    line-height: 1.5;
+
+    max-width: 100%;
+}
+
+
+.note-label {
+    color: #b36b00;
+    font-weight: 500;
+}
+
+
+.note-text {
+    color: #777;
+    margin-left: 3px;
+    word-break: break-word;
+}
+
+
+/* =========================================
+   ราคา
+========================================= */
+
+.order-item-price {
+    font-size: 14px;
+    white-space: nowrap;
+    font-weight: 500;
+    padding-top: 2px;
+}
+
+
+/* =========================================
+   STATUS TOAST
+========================================= */
+
+#statusToast {
+    position: fixed;
+
+    left: 50%;
+    bottom: 24px;
+
+    transform: translate(-50%, 30px);
+
+    width: calc(100% - 32px);
+    max-width: 380px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 13px 16px;
+
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 14px;
+
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.15);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+        opacity .3s ease,
+        transform .3s ease,
+        visibility .3s ease;
+
+    z-index: 9999;
+
+    font-family: "Kanit", sans-serif;
+}
+
+
+#statusToast.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 0);
+}
+
+
+/* =========================================
+   TOAST ICON
+========================================= */
+
+.status-toast-icon {
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #e8eefc;
+    color: #274bb6;
+
+    border-radius: 50%;
+
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 4px;
+
+}
+
+
+/* =========================================
+   TOAST TEXT
+========================================= */
+
+.status-toast-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+
+.status-toast-content strong {
+    font-size: 13px;
+    color: #222;
+}
+
+
+.status-toast-content span {
+    font-size: 11px;
+    color: #777;
+}
+
+
+/* =========================================
+   EMPTY ORDERS
+========================================= */
+
+.empty-orders {
+    width: 100%;
+
+    padding: 28px 20px;
+
+    text-align: center;
+
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 14px;
+
+    box-sizing: border-box;
+}
+
+
+.empty-orders-icon {
+    font-size: 32px;
+    margin-bottom: 8px;
+    /* opacity: .8; */
+    color: #274bb6;
+}
+
+
+.empty-orders strong {
+    display: block;
+
+    /* color: #333; */
+    color: #274bb6 !important;
+    
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+.empty-orders p {
+    margin: 5px 0 0;
+
+    color: #999;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   CUSTOMER NOTE
+========================================= */
+
+.total-box {
+    margin-top: 18px;
+    padding-top: 15px;
+
+    border-top: 1px solid #eee;
+}
+
+
+.total-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+
+.total-row span {
+    color: #999;
+}
+
+
+.total-row strong {
+    font-weight: 500;
+}
+
+
+.total-divider {
+    height: 1px;
+    background: #eee;
+
+    margin: 10px 0;
+}
+
+
+.total-row.final {
+    margin-bottom: 0;
+}
+
+
+.total-row.final span {
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+.total-row.final strong {
+    color: #274bb6;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   PAYMENT
+========================================= */
+
+/* .payment-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.payment-slip-section {
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+
+.payment-status {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 11px 12px;
+
+    background: #e8eefc;
+    border-radius: 11px;
+}
+
+
+.payment-status > span {
+    width: 27px;
+    height: 27px;
+
+    border-radius: 50%;
+
+    background: #274bb6;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 12px;
+    padding-top: 4px;
+}
+
+
+.payment-status strong {
+    display: block;
+
+    color: #274bb6;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+
+.payment-status small {
+    display: block;
+
+    color: #777;
+    font-size: 10px;
+    margin-top: 1px;
+}
+
+
+.slip-container {
+    margin-top: 12px;
+    padding: 8px;
+
+    background: #f7f7f7;
+    border-radius: 12px;
+
+    text-align: center;
+}
+
+
+.slip-container img {
+    display: block;
+
+    width: 100%;
+    max-height: 420px;
+
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+
+.slip-file-name {
+    margin-top: 6px;
+
+    font-size: 10px;
+    color: #aaa;
+
+    text-align: center;
+    word-break: break-all;
+} */
+
+
+/* =========================================
+   PAYMENT SLIP DROPDOWN
+========================================= */
+
+.payment-slip-card {
+    padding: 0;
+    overflow: hidden;
+    border-radius: 17px;
+}
+
+
+/* =========================================
+   DROPDOWN HEADER
+========================================= */
+
+.payment-slip-header {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border: none;
+    outline: none;
+
+    background: #fff;
+
+    font-family: 'Kanit', sans-serif;
+    text-align: left;
+
+    cursor: pointer;
+
+    -webkit-tap-highlight-color: transparent;
+    padding-top: 8px;
+}
+
+.payment-slip-header .section-heading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin: 0;
+}
+
+
+/* =========================================
+   ARROW
+========================================= */
+
+#paymentSlipArrow {
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 30px;
+    height: 30px;
+
+    color: #777;
+    font-size: 18px;
+
+    border-radius: 50%;
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        color 0.25s ease;
+}
+
+.payment-slip-header:active #paymentSlipArrow {
+    background: #f1f4fc;
+}
+
+.payment-slip-card.open #paymentSlipArrow {
+    transform: rotate(180deg);
+    color: #274bb6;
+}
+
+
+/* =========================================
+   DROPDOWN CONTENT
+========================================= */
+
+.payment-slip-content {
+    display: grid;
+    grid-template-rows: 0fr;
+
+    opacity: 0;
+
+    padding: 0 18px;
+
+    transition:
+        grid-template-rows 0.3s ease,
+        opacity 0.2s ease,
+        padding 0.3s ease;
+}
+
+.payment-slip-inner {
+    min-height: 0;
+    overflow: hidden;
+    padding-top: 5px;
+}
+
+.payment-slip-card.open .payment-slip-content {
+    grid-template-rows: 1fr;
+
+    padding-bottom: 18px;
+
+    opacity: 1;
+}
+
+
+/* =========================================
+   CONTENT INNER
+========================================= */
+
+.payment-slip-content {
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+.payment-slip-card.open .payment-slip-content {
+    padding-bottom: 18px;
+}
+
+
+/* =========================================
+   PAYMENT STATUS
+========================================= */
+
+.payment-status {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 10px 12px;
+
+    background: #e8eefc;
+
+    border-radius: 11px;
+}
+
+
+/* CHECK ICON */
+
+.payment-status > span {
+    width: 28px;
+    height: 28px;
+    min-width: 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #274bb6;
+    color: #fff;
+
+    border-radius: 50%;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+/* TEXT */
+
+.payment-status strong {
+    display: block;
+
+    color: #274bb6;
+
+    font-size: 12px;
+    font-weight: 500;
+
+    line-height: 1.4;
+}
+
+.payment-status small {
+    display: block;
+
+    margin-top: 1px;
+
+    color: #777;
+
+    font-size: 10px;
+    line-height: 1.4;
+}
+
+#rr-check{
+    padding-top: 2px;
+}
+
+
+/* =========================================
+   SLIP IMAGE
+========================================= */
+
+.slip-container {
+    margin-top: 12px;
+
+    padding: 7px;
+
+    background: #f5f5f5;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 12px;
+
+    text-align: center;
+}
+
+.slip-container img {
+    display: block;
+
+    width: 100%;
+    max-height: 420px;
+
+    object-fit: contain;
+
+    border-radius: 8px;
+}
+
+
+/* =========================================
+   FILE NAME
+========================================= */
+
+.slip-file-name {
+    margin: 7px 2px 0;
+
+    color: #aaa;
+
+    font-size: 10px;
+    line-height: 1.4;
+
+    text-align: center;
+
+    word-break: break-all;
+}
+
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.action-section {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+    margin-top: 5px;
+}
+
+
+.refresh-button,
+.home-button {
+    width: 100%;
+    height: 48px;
+
+    border-radius: 13px;
+
+    font-family: 'Kanit', sans-serif;
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+
+.refresh-button {
+    border: 1px solid #274bb6;
+    background: white;
+    color: #274bb6;
+}
+
+
+.refresh-button span {
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+
+.home-button {
+    border: none;
+    background: #274bb6;
+    color: white;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .header {
+        height: 64px;
+    }
+
+
+    .logo {
+        font-size: 17px;
+    }
+
+
+    .track-container {
+        padding:
+            22px
+            14px
+            35px;
+    }
+
+
+    .page-title h1 {
+        font-size: 23px;
+    }
+
+
+    .card {
+        padding: 17px;
+        border-radius: 15px;
+    }
+
+
+    .order-number-card {
+        padding: 15px 17px;
+    }
+
+
+    .order-number-card strong {
+        font-size: 19px;
+    }
+
+
+    #statusToast {
+        bottom: 20px;
+        width: calc(100% - 24px);
+        padding: 12px 14px;
+        border-radius: 13px;
+    }
+}
+
+
+/* =========================================
+   MY ORDERS
+========================================= */
+
+.my-orders-card {
+    margin-bottom: 16px;
+}
+
+
+.my-orders-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.my-order-card {
+    width: 100%;
+
+    border: 1px solid #e5e5e5;
+    background: #fff;
+
+    border-radius: 14px;
+    padding: 14px;
+
+    text-align: left;
+
+    font-family: "Kanit", sans-serif;
+
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+
+.my-order-card:hover {
+    border-color: #274bb6;
+    transform: translateY(-1px);
+}
+
+
+.my-order-card.selected {
+    border: 2px solid #274bb6;
+    background: #f2f5ff;
+}
+
+
+.my-order-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 10px;
+}
+
+
+.my-order-id {
+    font-size: 16px;
+    font-weight: 700;
+    color: #274bb6;
+}
+
+
+.order-status-small {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 4px 9px;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+    font-weight: 500;
+}
+
+
+.status-received {
+    background: #e8eefc;
+    color: #274bb6;
+}
+
+
+.status-preparing {
+    background: #fff4df;
+    color: #b36b00;
+}
+
+
+.status-shipping {
+    background: #e8f0ff;
+    color: #3867b8;
+}
+
+
+.status-completed {
+    background: #e9f7e9;
+    color: #37833b;
+}
+
+
+.my-order-card-info {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 12px;
+    margin-top: 8px;
+
+    color: #777;
+    font-size: 12px;
+}
+
+#calendar-day,#rr-clock,#grocery-basket{
+    position: relative;
+    top: 2px;
+    right: 2px;
+    color: #274bb6;
+}
+
+
+.my-order-card-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 12px;
+    padding-top: 10px;
+
+    border-top: 1px solid #eeeeee;
+}
+
+
+.my-order-card-bottom strong {
+    color: #222;
+    font-size: 15px;
+}
+
+
+.view-order {
+    color: #274bb6;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+#arrow-small-right{
+    position: relative;
+    top: 2px;
+}
+
+
+/* =========================================
+   EMPTY ORDERS
+========================================= */
+
+.empty-orders {
+    text-align: center;
+    padding: 24px 15px;
+    color: #888;
+}
+
+
+.empty-orders-icon {
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+
+.empty-orders strong {
+    display: block;
+
+    color: #555;
+    font-size: 15px;
+}
+
+
+.empty-orders p {
+    margin: 5px 0 0;
+    font-size: 12px;
+}
+
+
+/* =========================================
+   SELECTED ORDER
+========================================= */
+
+#selectedOrderSection {
+    width: 100%;
+}
+
